@@ -1,0 +1,182 @@
+:root {
+    --primary-background: rgb(255, 255, 255);
+    --secondary-background: rgb(251, 252, 252);
+    --tertiary-background: rgb(248, 249, 251);
+    --light-accent: rgb(238, 242, 246);
+    --neutral-accent: rgb(227, 232, 238);
+    --border-color: rgb(205, 212, 222);
+    --secondary-border: rgb(153, 163, 178);
+    --muted-text: rgb(105, 116, 133);
+    --secondary-text: rgb(74, 85, 101);
+    --primary-text: rgb(54, 65, 82);
+    --dark-accent: rgb(31, 41, 57);
+    --darker-accent: rgb(17, 24, 38);
+    --darkest-accent: rgb(13, 18, 28);
+    --black: rgb(0, 0, 0);
+    --highlight-bg: rgb(224, 234, 255);
+    --brand-blue-light: rgb(83, 177, 253);
+    --brand-blue: rgb(46, 144, 250);
+    --brand-blue-dark: rgb(21, 112, 239);
+    --brand-deep-blue: rgb(23, 92, 211);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: #020617;
+}
+
+.header {
+    /* background-color: red; */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+.nav {
+    padding: 2px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 142px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-list--item a {
+    font-size: 14px;
+    color: #020617;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-list--item a:hover {
+    color: #3B82F6;
+}
+
+.btn {
+    border: none;
+    background-color: #020617;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background-color: #1b1f2e;
+    cursor: pointer;
+}
+
+.hero-section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section--box {
+    padding: 100px 120px;
+}
+
+.heading-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-heading {
+    width: 100%;
+    font-size: 52px;
+    margin: 22px 0;
+    line-height: 1.1;
+}
+
+.main-text--box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+.btn-box {
+    width: 100%;
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.plans-btn {
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 0.5px solid rgb(13, 18, 28);
+    text-transform: capitalize;
+    background: linear-gradient(rgb(74, 85, 101) 0%, rgb(17, 24, 38) 100%);
+}
+
+.plans-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(74, 85, 101) 50%, rgb(17, 24, 38) 100%);
+}
+
+.status-box {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.status-symbol {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #22C55E;
+}
+
+.brands-box {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 8px 18px;
+}
+
+.brands-box p {
+    text-align: center;
+    color: rgb(205, 212, 222);
+}
+
+.brands-imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 24px;
+}
+
+.brand-img--box {
+    width: 82px;
+}
+
+.brand-img--box img {
+    width: 100%;
+}
