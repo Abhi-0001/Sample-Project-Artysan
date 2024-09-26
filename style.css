@@ -14,10 +14,10 @@
     --darkest-accent: rgb(13, 18, 28);
     --black: rgb(0, 0, 0);
     --highlight-bg: rgb(224, 234, 255);
-    --brand-blue-light: rgb(83, 177, 253);
-    --brand-blue: rgb(46, 144, 250);
-    --brand-blue-dark: rgb(21, 112, 239);
-    --brand-deep-blue: rgb(23, 92, 211);
+    --brand-color-light: rgb(83, 177, 253);
+    --brand-color: rgb(46, 144, 250);
+    --brand-color-dark: rgb(21, 112, 239);
+    --brand-deep-color: rgb(23, 92, 211);
 }
 
 * {
@@ -28,7 +28,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    color: #020617;
+    color: var(--primary-text);
 }
 
 .header {
@@ -63,7 +63,7 @@ body {
 }
 
 .nav-list--item a:hover {
-    color: #3B82F6;
+    color: var(--brand-color-dark);
 }
 
 .btn {
@@ -80,12 +80,12 @@ body {
     cursor: pointer;
 }
 
-.hero-section {
+.section {
     width: 1200px;
     margin: 0 auto;
 }
 
-.hero-section--box {
+.section-box {
     padding: 100px 120px;
 }
 
@@ -100,6 +100,7 @@ body {
     font-size: 52px;
     margin: 22px 0;
     line-height: 1.1;
+    color: var(--dark-accent);
 }
 
 .main-text--box {
@@ -167,9 +168,8 @@ body {
 
 .brands-imgs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-
     padding: 12px 24px;
 }
 
@@ -179,4 +179,54 @@ body {
 
 .brand-img--box img {
     width: 100%;
+}
+
+.hero-section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section--box {
+    padding: 100px 120px;
+}
+
+.text-box {
+    text-align: center;
+
+}
+
+.tertiary-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-color-dark);
+    margin-bottom: 28px;
+
+    text-transform: capitalize;
+
+}
+
+.secondary-heading {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: var(v=--dark-accent);
+}
+
+.benefit-img--box {
+    width: 196px;
+}
+
+.benefit-heading {
+    color: var(--dark-accent);
+    font-size: 18px;
+
+}
+
+.benefit-text {}
+
+.benefit-content--box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 18px;
 }
