@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --primary-background: rgb(255, 255, 255);
     --secondary-background: rgb(251, 252, 252);
@@ -26,9 +28,9 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family: "Roboto", sans-serif;
     color: var(--primary-text);
+    letter-spacing: 1.2px;
 }
 
 .header {
@@ -81,7 +83,7 @@ body {
 }
 
 .section {
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
 }
 
@@ -111,6 +113,7 @@ body {
 .main-text {
     font-size: 20px;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 
@@ -192,41 +195,116 @@ body {
 
 .text-box {
     text-align: center;
-
 }
 
 .tertiary-heading {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--brand-color-dark);
-    margin-bottom: 28px;
-
+    margin-bottom: 16px;
     text-transform: capitalize;
-
 }
 
 .secondary-heading {
-    font-size: 52px;
+    font-size: 42px;
     line-height: 1.2;
     margin-bottom: 18px;
-    color: var(v=--dark-accent);
+    color: var(--darkest-accent);
 }
 
-.benefit-img--box {
-    width: 196px;
+.content-box {
+    width: 100%;
 }
+
 
 .benefit-heading {
     color: var(--dark-accent);
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 12px;
+}
+
+.benefit-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.benefit-text--box {
+    width: 60%;
+    margin: 82px auto;
+}
+
+.benefit-content--box {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
 
 }
 
-.benefit-text {}
+.benefit-box {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-.benefit-content--box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 12px;
-    column-gap: 18px;
+.benefit-img--box {
+    width: 50%;
+    margin: 12px auto;
+    margin-bottom: 24px;
+}
+
+/** HOW IT WORKS */
+
+.hiw-content--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+}
+
+
+.left-box {
+    text-align: justify;
+}
+
+.left-box--list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-item {
+    margin-bottom: 22px;
+}
+
+.list-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 12px 32px;
+
+}
+
+.list-item--heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darker-accent);
+}
+
+.list-item--description {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.right-box {
+    justify-self: flex-end;
+}
+
+.right-box .hiw-img {
+    width: 700px;
 }
