@@ -25,12 +25,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--primary-text);
-    letter-spacing: 1.2px;
+    letter-spacing: 1.2px; 
 }
 
 .header {
@@ -206,22 +207,27 @@ body {
 }
 
 .secondary-heading {
+    text-transform: capitalize;
     font-size: 42px;
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 18px;
     color: var(--darkest-accent);
+
 }
+
 
 .content-box {
     width: 100%;
 }
 
 
-.benefit-heading {
+.section-heading {
     color: var(--dark-accent);
     font-size: 20px;
     font-weight: 550;
     margin-bottom: 12px;
+    text-transform: capitalize;
 }
 
 .benefit-text {
@@ -308,3 +314,187 @@ body {
 .right-box .hiw-img {
     width: 700px;
 }
+
+.pricing-content--box{
+    display: flex;
+    justify-content: center;
+
+    gap: 16px;
+}
+
+.pricing {
+    /* box-sizing: content-box !important; */
+    width: 450px;
+    padding: 32px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-left-width: 10px;
+    border-bottom-width: 10px;
+    border-style: solid;
+    border-radius: 16px;
+    
+}
+
+.pricing.starter{
+    border-color: var(--border-color);
+}
+
+.pricing.premium{
+    border-color: var(--dark-accent);
+}
+
+
+.pricing-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.pricing-days {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--darkest-accent);
+}
+
+.pricing-detail {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 16px 0;
+}
+
+
+.facility::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    background-size: 55%;
+    display: inline-flex;
+    height: 35px;
+    width: 35px;  
+}
+/* DRY -> DO NOT REPEAT YOURSELF */
+
+.available::before {
+    background-image: url('./img/icons/tick.svg');
+}
+
+.not-available {
+    
+}
+
+.not-available::before{
+    background-image: url('./img/icons/cross.svg');
+}
+
+.question-box{
+    width: 65%;
+    margin: 8px auto;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 18px;
+    color: var(--darkest-accent);
+
+    border-left: 3px solid var(--neutral-accent);
+    border-top: 3px solid var(--neutral-accent);
+    border-right: 3px solid var(--neutral-accent);
+    border-bottom: 5px solid var(--neutral-accent);
+}
+
+.question-box:hover{
+    border-color: var(--dark-accent);
+    cursor: pointer;
+}
+
+.pricing-note{
+    margin: 8px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.pricing-note img:first-child {
+    width: 12px;
+}
+
+.pricing-note img:last-child{
+    width: 32px;
+}
+
+.contact-box {
+    max-width: 500px;
+    /* min-width: 500px; */
+    /* 500 <= x <=500px */
+    
+    margin: 16px auto;
+    padding: 14px 16px;
+
+    border-left: 3px solid var(--neutral-accent);
+    border-top: 3px solid var(--neutral-accent);
+    border-right: 3px solid var(--neutral-accent);
+    border-bottom: 5px solid var(--neutral-accent);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box:hover{
+    border-color: var(--dark-accent);
+    cursor: pointer;
+}
+
+.contact-text--box {
+    width: 50%;
+}
+
+.author-image {
+    width: 64px;
+    border-radius: 100%;
+}
+
+
+
+/* 
+.parent{
+    width: 500px;
+    height: 250px;
+    margin: 50px auto;
+    border: solid #5B6DCD 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    border: solid #22C55E 100px;
+    padding: 5px;
+} */
+
+/* .background {
+    width: 600px;
+    height: 600px;
+    background-color: #22C55E;
+    background-image: url('./img/HIW/hiw1.png');
+    background-image: url('./img/logo.png');
+    background-repeat: no-repeat;
+
+    background-position: bottom 80px right 50px;
+
+    background-size: contain;
+
+} */
